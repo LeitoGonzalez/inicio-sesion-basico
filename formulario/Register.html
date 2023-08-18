@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registrarse</title> 
+		<link rel='stylesheet' href="css/estilos.css"/>	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+		<script src="java/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div>
+				holaaaaaaaa
+			</div>
+			<div class="navbar">
+                <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+                <a class="active" href="index.html"><i class="fa fa-fw fa-user"></i> Login</a>
+            </div>
+			  
+		</header>
+		<div class="formulario" onsubmit="verificarPassword(); return false">
+			<div class="form">
+				<div class="titulo">
+					
+					<div id="msg"></div>
+ 
+					<!-- Mensajes de Verificación -->
+					<div id="error" class="alert alert-danger ocultar" role="alert">
+						Las Contraseñas no coinciden, vuelve a intentar !
+					</div><br>
+
+					<form action="#">
+                        
+						<input class="espacios" type="text" id="usu" name="usu" placeholder="Nombre de usuario" required><br><br>
+						
+						<input class="espacios" type="text" id="email" name="email" placeholder="Email" required><br><br>
+						
+						<input class="espacios" type="password" id="pass1" name="pass1" placeholder="Contrase&ntilde;a" required><br><br>
+						
+						<input class="espacios" type="password" id="pass2" name="pass2" placeholder="Vuelve a escribir la Contrase&ntilde;a" required><br><br>
+						
+                        
+						<div class="Condiciones">
+							<label class="container">
+								<input type="checkbox" required> He le&iacute;do y estoy de acuerdo con los <a href="#"> T&eacute;rminos y Condiciones </a>
+								<span class="checkmark"></span>
+							  </label>
+						</div><br>
+                        
+						<button class="boton" type="enviar" value="Enviar">Registrarse</button><br><br>
+						
+						<hr><br>
+						
+						<div class="signup">Ya eres miembro? <a href="index.html">Inicia sesi&oacute;n!</a></div><br>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
